@@ -1,0 +1,87 @@
+.navbar {
+  position: fixed;
+  top: 4%;
+  width: 100%;
+  height: 60px;
+  background-color: #f3f6fb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;        
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* LEFT SIDE */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #3a5ccc;
+}
+
+.logo-icon {
+  background-color: #3a5ccc;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* RIGHT SIDE */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: nowrap;
+}
+
+/* LINKS */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.nav-links li a:hover {
+  color: #3a5ccc;
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+  min-width: 90px;
+  background-color: #3a5ccc;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #2a3c99;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}

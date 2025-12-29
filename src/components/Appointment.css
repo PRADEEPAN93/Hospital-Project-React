@@ -1,0 +1,117 @@
+.appt-layout {
+  display: flex;
+  width: 125%;
+  min-height: 100vh;
+  background: #f4f6fb;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* SIDEBAR */
+.appt-sidebar {
+  width: 220px;
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+.appt-sidebar h3 {
+  color: #2f5be7;
+  margin-bottom: 20px;
+}
+
+.appt-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.appt-sidebar li {
+  padding: 12px;
+  margin-bottom: 10px;
+  background: #f1f4ff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.appt-sidebar li.active {
+  background: #2f5be7;
+  color: #fff;
+}
+
+/* MAIN CONTENT */
+.appt-main {
+  flex: 1;
+  padding: 30px;
+}
+
+.appt-main h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* FORM BOX */
+.appt-form-box {
+  max-width: 420px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.appt-row {
+  margin-bottom: 15px;
+}
+
+.appt-row label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.appt-row input,
+.appt-row select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.appt-row input:disabled {
+  background: #eef1ff;
+  font-weight: 600;
+}
+
+
+.two-col {
+  display: flex;
+  gap: 10px;
+}
+
+.appt-confirm-btn {
+  width: 100%;
+  padding: 12px;
+  background: #2f5be7;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.appt-confirm-btn:hover {
+  background: #1e47c6;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .appt-layout {
+    flex-direction: column;
+  }
+
+  .appt-sidebar {
+    width: 100%;
+  }
+
+  .appt-form-box {
+    max-width: 100%;
+  }
+}

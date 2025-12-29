@@ -1,0 +1,96 @@
+.dept-why-section {
+  width: 120%; 
+  background: #f9fafc;
+  padding: 100px 0px; 
+  box-sizing: border-box;
+}
+
+.dept-why-container {
+  max-width: 1100px; 
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 40px;
+}
+
+
+/* LEFT & RIGHT MAIN BOX */
+.dept-box,
+.why-box {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+  display: flex;              /* ✅ FIX */
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+.dept-box h2,
+.why-box h2 {
+  color: #3a5ccc;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+/* DEPARTMENT CARDS */
+.dept-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+}
+
+.dept-card {
+  background: #f5f7ff;
+  padding: 22px 15px;
+  text-align: center;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dept-card span {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.dept-card h4 {
+  font-size: 16px;
+  color: #333;
+}
+
+.dept-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* RIGHT SIDE CONTENT */
+.why-box p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.why-points div {
+  background: #f5f7ff;  
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+
+@media (max-width: 768px) {
+  .dept-why-container {
+    grid-template-columns: 1fr;
+  }
+
+  .dept-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
