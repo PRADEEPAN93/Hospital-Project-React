@@ -17,14 +17,14 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* MOBILE HAMBURGER */}
+      {/* HAMBURGER ICON */}
       <div className="hamburger" onClick={toggleMenu}>
         <div className={isOpen ? "bar rotate1" : "bar"}></div>
         <div className={isOpen ? "bar fade" : "bar"}></div>
         <div className={isOpen ? "bar rotate2" : "bar"}></div>
       </div>
 
-      {/* RIGHT: Menu + Login */}
+      {/* NAV LINKS & LOGIN */}
       <div className={`navbar-right ${isOpen ? "open" : ""}`}>
         <ul className="nav-links">
           <li><Link to="/" onClick={() => setIsOpen(false)}>Dashboard</Link></li>
@@ -32,9 +32,8 @@ const Navbar = () => {
           <li><Link to="/doctors" onClick={() => setIsOpen(false)}>Doctors</Link></li>
           <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
         </ul>
-
         <Link to="/login">
-          <button className="login-btn">Login</button>
+          <button className="login-btn" onClick={() => setIsOpen(false)}>Login</button>
         </Link>
       </div>
     </nav>
